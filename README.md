@@ -11,7 +11,7 @@ For All program Test Don't Forget :
 ![1631748376__javaconceptMapv21 1](https://github.com/BENAMORNAWFAL/Java/assets/128052618/01e1e6aa-d998-4602-8b97-f6f98314e66f)
 
 
-Dependencies :
+Dependencies to add to pom.xml file:
 
 
         <!-- DEPENDENCIES FOR STARTING SPRING PROJECTS-->
@@ -84,3 +84,16 @@ Dependencies :
             <version>5.2.3</version>
         </dependency>
 
+
+application.properties file:
+Note: Remember to edit the schema name and change the username and password to your own.
+
+        # Where are jsp files? HERE!
+        spring.mvc.view.prefix=/WEB-INF/
+        # Data Persistence
+        spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA_NAME>>
+        spring.datasource.username=username
+        spring.datasource.password=password
+        spring.jpa.hibernate.ddl-auto=update
+        # For Update and Delete method hidden inputs
+        spring.mvc.hiddenmethod.filter.enabled=true
