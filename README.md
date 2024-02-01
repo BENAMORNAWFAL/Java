@@ -91,7 +91,7 @@ Note: Remember to edit the schema name and change the username and password to y
         # Where are jsp files? HERE!
         spring.mvc.view.prefix=/WEB-INF/
         # Data Persistence
-        spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA_NAME>>
+        spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA_NAME>>?createDatabaseIfNotExist=true
         spring.datasource.username=username
         spring.datasource.password=password
         spring.jpa.hibernate.ddl-auto=update
